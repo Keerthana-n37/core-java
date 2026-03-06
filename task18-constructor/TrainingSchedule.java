@@ -7,4 +7,10 @@ class TrainingSchedule{
 		this.scheduleType=scheduleType;
 		this.sessionPerWeek=sessionPerWeek;
 	}
+	
+	void getTrainingSchedule()
+	{
+		System.out.println("Schedule Type: " + this.scheduleType);
+        System.out.println("Sessions Per Week: " + this.sessionPerWeek);
+	}
 }

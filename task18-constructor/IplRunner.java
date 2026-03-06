@@ -9,5 +9,7 @@ class IplRunner{
 
         Ipl ipl = new Ipl(15, 1200.5f, 'B', true, 800000,
                 batter, franchise, venue, mentor, advertiser);
+				
+		ipl.getIpl();		
     }
 }

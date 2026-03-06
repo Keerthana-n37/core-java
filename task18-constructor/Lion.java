@@ -25,28 +25,56 @@ class Lion{
 		this.trainer=trainer;
 		this.health=health;
 	}
-	void display() {
+	void displayLionDetails() {
 
-        System.out.println("Lion Name: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("Weight: " + weight);
-        System.out.println("Gender: " + gender);
-        System.out.println("Is Wild: " + isWild);
+        System.out.println("Lion Name: " + this.name);
+        System.out.println("Age: " + this.age);
+        System.out.println("Weight: " + this.weight);
+        System.out.println("Gender: " + this.gender);
+        System.out.println("Is Wild: " + this.isWild);
 
-        System.out.println("Habitat Location: " + habitat.location);
-        System.out.println("Habitat Climate: " + habitat.climate);
-
-        System.out.println("Diet Type: " + diet.foodType);
-        System.out.println("Meals Per Day: " + diet.mealsPerDay);
-
-        System.out.println("Zoo Name: " + zoo.zooName);
-        System.out.println("Zoo City: " + zoo.city);
-
-        System.out.println("Trainer Name: " + trainer.trainerName);
-        System.out.println("Trainer Experience: " + trainer.experience);
-
-        System.out.println("Vaccinated: " + health.vaccinated);
-        System.out.println("Last Checkup: " + health.lastCheckup);
+        if(this.habitat!=null)
+		{
+			this.habitat.getHabitat();
+		}
+		else
+		{
+			System.out.println("Habitat is null");
+		}
+		
+		if(this.diet!=null)
+		{
+			this.diet.getDiet();
+		}
+		else{
+			System.out.println("Diet is null");
+		}
+		
+		if(this.zoo!=null)
+		{
+			this.zoo.getZoo();
+		}
+		else{
+			System.out.println("Zoo is null");
+		}
+		
+		if(this.trainer!=null)
+		{
+			this.trainer.getTrainer();
+		}
+		else{
+			System.out.println("Trainer is null");
+		}
+		
+		if(this.health!=null)
+		{
+			this.health.getHealth();
+		}
+		else{
+			System.out.println("Health is null");
+		}
     }
+	
+	
 	
 }

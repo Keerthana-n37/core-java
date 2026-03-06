@@ -11,6 +11,6 @@ class CoachRunner {
         Coach coach = new Coach("Rahul", 45, "Male", 20, true,
                 team, certification, schedule, award, health);
 
-        coach.display();
+        coach.displayCoach();
     }
 }

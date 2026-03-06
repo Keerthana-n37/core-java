@@ -9,9 +9,13 @@ class Button{
 		this.isWorking=isWorking;
 		this.size=size;
 		System.out.println("Button constructor is executing..");
-		System.out.println("Button color:"+color);
-		System.out.println("Is button working:"+isWorking);
-		System.out.println("Button size:"+size);
-		System.out.println("--------------------");
+		
+	}
+	
+	void getButton()
+	{
+		System.out.println("Button color:"+this.color);
+		System.out.println("Is button working:"+this.isWorking);
+		System.out.println("Button size:"+this.size);
 	}
 }

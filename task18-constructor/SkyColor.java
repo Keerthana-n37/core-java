@@ -4,4 +4,9 @@ class SkyColor{
         System.out.println("Executing SkyColor Constructor");
         this.color = color;
     }
+	
+	void getSky()
+	{
+		System.out.println("Sky color:"+this.color);
+	}
 }

@@ -10,5 +10,7 @@ class TeaRunner{
 
         Tea tea = new Tea(1101, 95.75, 'L', true, 15,
                 expert, patron, mix, mugType, supplement);
+				
+		tea.getTea();		
     }
 }

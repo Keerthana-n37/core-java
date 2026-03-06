@@ -10,5 +10,7 @@ class AquariumRunner{
 
         Aquarium aquarium = new Aquarium(250.5, 26.5f, 7.8, 15, true,
                 filter, decoration, lighting, plants, feeding);
+				
+		aquarium.getInfo();		
     }
 }

@@ -5,4 +5,9 @@ class Patron{
 		System.out.println("Executing Patron Constructor");
 		this.fullName=fullName;
 	}
+	
+	void getPatron()
+	{
+		System.out.println("Patron full name:"+this.fullName);
+	}
 }

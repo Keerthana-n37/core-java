@@ -9,9 +9,12 @@ class Battery{
 		this.rechargeable=rechargeable;
 		this.brand=brand;
 		System.out.println("Battery class constructor is executing...");
-		System.out.println("Battery Capacity:"+capacity);
-		System.out.println("Battery is rechargeable:"+rechargeable);
+	}
+	
+	void getBattery()
+	{
+		System.out.println("Battery Capacity:"+this.capacity);
+		System.out.println("Battery is rechargeable:"+this.rechargeable);
 		System.out.println("Battery brand:"+this.brand);
-		System.out.println("--------------------");
 	}
 }

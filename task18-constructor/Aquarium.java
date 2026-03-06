@@ -29,16 +29,55 @@ class Aquarium{
         this.plants = plants;
         this.feeding = feeding;
 
-        System.out.println("Tank Volume: " + tankVolumeLiters);
-        System.out.println("Water Temperature: " + waterTemperatureC);
-        System.out.println("pH Level: ");
-        System.out.println("Number of Fish: ");
-        System.out.println("Has Heater: ");
-
-        System.out.println("Filter: " + filter.type);
-        System.out.println("Decoration: " + decoration.name);
-        System.out.println("Lighting: " + lighting.style);
-        System.out.println("Plants: " + plants.species);
-        System.out.println("Feeding Schedule: " + feeding.schedule);
     }
+	
+	void getInfo()
+	{
+		System.out.println("Aquarium details...");
+		System.out.println("Tank Volume: " + this.tankVolumeLiters);
+        System.out.println("Water Temperature: " + this.waterTemperatureC);
+        System.out.println("pH Level: "+this.phLevel);
+        System.out.println("Number of Fish: "+this.fishCount);
+        System.out.println("Has Heater: "+this.hasHeater);
+		
+		if(this.filter!=null)
+		{
+			this.filter.getDetails();
+		}
+		else{
+			System.out.println("Filter is not there");
+		}
+		
+		if(this.decoration!=null)
+		{
+			this.decoration.getDetails();
+		}
+		else{
+			System.out.println("Decoration is not there");
+		}
+		
+		if(this.lighting!=null)
+		{
+			this.lighting.getDetails();
+		}
+		else{
+			System.out.println("Lighting is not there");
+		}
+		
+		if(this.plants!=null)
+		{
+			this.plants.getDetails();
+		}
+		else{
+			System.out.println("Plants are not there");
+		}
+		
+		if(this.feeding!=null)
+		{
+			this.feeding.getDetails();
+		}
+		else{
+			System.out.println("Plants are not there");
+		}
+	}
 }

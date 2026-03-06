@@ -27,16 +27,54 @@ class Tea{
 		this.mugType=mugType;
 		this.supplement=supplement;
 		
-		System.out.println("Tea Serial: " + teaSerial);
-        System.out.println("Cost: " + cost);
-        System.out.println("Portion Code: " + portionCode);
-        System.out.println("Is Steamy: " + isSteamy);
-        System.out.println("Steep Minutes: " + steepMinutes);
-
-        System.out.println("Leaf Expert: " + expert.fullName);
-        System.out.println("Patron: " + patron.fullName);
-        System.out.println("Tea Mix: " + mix.mixName);
-        System.out.println("Mug Type: " + mugType.mugStyle);
-        System.out.println("Supplement: " + supplement.supplementName);
+	}
+	
+	void getTea()
+	{
+		System.out.println("Tea Serial: " + this.teaSerial);
+        System.out.println("Cost: " + this.cost);
+        System.out.println("Portion Code: " + this.portionCode);
+        System.out.println("Is Steamy: " + this.isSteamy);
+        System.out.println("Steep Minutes: " + this.steepMinutes);
+		
+		if(this.expert!=null)
+		{
+			this.expert.getExpert();
+		}
+		else{
+			System.out.println("Expert is null");
+		}
+		
+		if(this.patron!=null)
+		{
+			this.patron.getPatron();
+		}
+		else{
+			System.out.println("Patron is null");
+		}
+		
+		if(this.mix!=null)
+		{
+			this.mix.getTeaMix();
+		}
+		else{
+			System.out.println("Mix is null");
+		}
+		
+		if(this.mugType!=null)
+		{
+			this.mugType.getMugType();
+		}
+		else{
+			System.out.println("MugType is null");
+		}
+		
+		if(this.supplement!=null)
+		{
+			this.supplement.getSupplement();
+		}
+		else{
+			System.out.println("Supplement is null");
+		}
 	}
 }

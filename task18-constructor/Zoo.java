@@ -6,4 +6,10 @@ class Zoo{
 		this.zooName=zooName;
 		this.city=city;
 	}
+	
+	void getZoo()
+	{
+		System.out.println("Zoo Name: " + this.zooName);
+        System.out.println("Zoo City: " +this.city);
+	}
 }

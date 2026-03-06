@@ -4,4 +4,9 @@ class Wind{
         System.out.println("Executing Wind Constructor");
         this.description = description;
     }
+	
+	void getWindDetails()
+	{
+		System.out.println("Wind description:"+this.description);
+	}
 }

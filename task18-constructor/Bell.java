@@ -28,17 +28,54 @@ class Bell{
         this.tone = tone;
         this.support = support;
         this.enhancer = enhancer;
-
-        System.out.println("Weight: " + weight);
-        System.out.println("Form Symbol: " +volume);
-        System.out.println("Is Musical: " + isMusical);
-        System.out.println("Ring Count: " + ringCount);
-        System.out.println("Price:" + price);
-
-        System.out.println("Sound Designer: " + designer.name);
-        System.out.println("Audience: " + audience.name);
-        System.out.println("Tone: " + tone.description);
-        System.out.println("Support: " + support.type);
-        System.out.println("Enhancer: " + enhancer.name);
     }
+	
+	
+	void getBell()
+	{
+	    System.out.println("Weight: " + this.weight);
+        System.out.println("Form Symbol: " +this.volume);
+        System.out.println("Is Musical: " +this.isMusical);
+        System.out.println("Ring Count: " + this.ringCount);
+        System.out.println("Price:" + this.price);
+		if(this.designer!=null)
+		{
+			this.designer.getDesigner();
+		}
+		else{
+			System.out.println("Designer is not there");
+		}
+		if(this.audience!=null)
+		{
+			this.audience.getAudience();
+		}
+		else{
+			System.out.println("Audience is not there");
+		}
+		if(this.tone!=null)
+		{
+			
+			this.tone.getTone();
+		}
+		else{
+			System.out.println("IsMusical is not there");
+		}
+		if(this.support!=null)
+		{
+			this.support.getSupport();
+		}
+		else{
+			System.out.println("Ring Count is not there");
+		}
+		
+		if(this.enhancer!=null)
+		{
+			this.enhancer.getEnhancer();
+		}
+		else{
+			System.out.println("Price is not there");
+		}
+	}
+	
+	
 }

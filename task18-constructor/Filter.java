@@ -4,4 +4,9 @@ class Filter{
         System.out.println("Executing Filter Constructor");
         this.type = type;
     }
+	
+	void getDetails()
+	{
+		System.out.println("Aquarium filter type:"+this.type);
+	}
 }

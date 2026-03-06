@@ -7,7 +7,12 @@ class Backup {
         this.backupLocation = backupLocation;
 		
 		System.out.println("Executing backup constructor");
-		System.out.println("Is backup enabled:"+backupEnabled);
-		System.out.println("Backup location:"+backupLocation);
+		
     }
+	
+	void getBackup()
+	{
+		System.out.println("Is backup enabled:"+this.backupEnabled);
+		System.out.println("Backup location:"+this.backupLocation);
+	}
 }

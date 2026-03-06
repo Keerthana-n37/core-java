@@ -7,4 +7,10 @@ class Certification{
 		this.certificateName=certificateName;
 		this.year=year;
 	}
+	
+	void getCertification()
+	{
+		System.out.println("Coach certification Name: " + this.certificateName);
+        System.out.println("Coach certification Year: " + this.year);
+	}
 }

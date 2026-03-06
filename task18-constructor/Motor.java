@@ -29,19 +29,49 @@ class Motor{
 		  
 	void display()
 	{
-		System.out.println("Motor brand:"+brand);
-		System.out.println("Power:"+power);
-		System.out.println("Voltage:"+voltage);
-		System.out.println("Type:"+type);
-		System.out.println("Automatic:"+isAutomatic);
-		System.out.println("Manufacturer Name:"+manufacturer.name);
-		System.out.println("Manufacturer country:"+manufacturer.country);
-		System.out.println("Battery Capacity:"+motorBattery.capacity);
-		System.out.println("Battery type:"+motorBattery.type);
-		System.out.println("Controller model:"+controller.model);
-		System.out.println("Controller Version:"+controller.version);
-		System.out.println("Cooling method:"+coolingSystem.method);
-		System.out.println("Cooling efficiency:"+coolingSystem.efficiency);
+		System.out.println("Motor brand:"+this.brand);
+		System.out.println("Power:"+this.power);
+		System.out.println("Voltage:"+this.voltage);
+		System.out.println("Type:"+this.type);
+		System.out.println("Automatic:"+this.isAutomatic);
 		
+		if(this.manufacturer!=null)
+		{
+			this.manufacturer.getManufacturer();
+		}
+		else{
+			System.out.println("Manufacturer is null");
+		}
+		if(this.motorBattery!=null)
+		{
+			this.motorBattery.getMotorBattery();
+		}
+		else{
+			System.out.println("motorBattery is null");
+		}
+		
+		if(this.controller!=null)
+		{
+			this.controller.getController();
+		}
+		else{
+			System.out.println("controller is null");
+		}
+		
+		if(this.coolingSystem!=null)
+		{
+			this.coolingSystem.getCoolingSystem();
+		}
+		else{
+			System.out.println("coolingSystem is null");
+		}
+		
+		if(this.warranty!=null)
+		{
+			this.warranty.getWarranty();
+		}
+		else{
+			System.out.println("warranty is null");
+		}
 	}	
 }

@@ -26,27 +26,53 @@ class Coach{
 		this.coachHealth=coachHealth;
 	}
 	
-	void display(){
-        System.out.println("Coach Name: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("Gender: " + gender);
-        System.out.println("Experience Years: " + experienceYears);
-        System.out.println("Head Coach: " + isHeadCoach);
-
-        System.out.println("Team Name: " + team.teamName);
-        System.out.println("Team Sport: " + team.sport);
-
-        System.out.println("Certification Name: " + certification.certificateName);
-        System.out.println("Certification Year: " + certification.year);
-
-        System.out.println("Schedule Type: " + schedule.scheduleType);
-        System.out.println("Sessions Per Week: " + schedule.sessionPerWeek);
-
-        System.out.println("Award Name: " + award.awardName);
-        System.out.println("Award Year: " + award.year);
-
-        System.out.println("Health Status: " + coachHealth.status);
-        System.out.println("Last Checkup Date: " + coachHealth.lastcheckup);
+	void displayCoach(){
+		System.out.println("Coach details....")
+        System.out.println("Coach Name: " +this.name);
+        System.out.println("Age: " + this.age);
+        System.out.println("Gender: " + this.gender);
+        System.out.println("Experience Years: " + this.experienceYears);
+        System.out.println("Head Coach: " + this.isHeadCoach);
+		
+		if(this.team!=null)
+		{
+			this.team.getTeam();
+		}
+		else{
+			System.out.println("Team is not there");
+		}
+		
+		if(this.certification!=null)
+		{
+			this.certification.getCertification();
+		}
+		else{
+			System.out.println("Certification is not there");
+		}
+		
+		if(this.schedule!=null)
+		{
+			this.schedule.getTrainingSchedule();
+		}
+		else{
+			System.out.println("Training schedule is not there");
+		}
+		
+		if(this.award!=null)
+		{
+			this.award.getAward();
+		}
+		else{
+			System.out.println("Award is not there");
+		}
+		
+		if(this.coachHealth!=null)
+		{
+			this.coachHealth.getCoachHealth();
+		}
+		else{
+			System.out.println("CoachHealth is not there");
+		}
     }
 	
 }

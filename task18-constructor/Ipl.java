@@ -27,17 +27,55 @@ class Ipl {
         this.venue = venue;
         this.mentor = mentor;
         this.advertiser = advertiser;
-
-        System.out.println("Match Number: " + this.matchNumber);
+    }
+	
+	void getIpl()
+	{
+		System.out.println("Match Number: " + this.matchNumber);
         System.out.println("Ticket Price: " + this.ticketPrice);
         System.out.println("Zone: " + this.zone);
         System.out.println("Night Match: " +this.nightMatch);
         System.out.println("Audience Count: " + this.audienceCount);
-
-        System.out.println("Batter Name: " + batter.batterName);
-        System.out.println("Franchise Name: " + franchise.franchiseTitle);
-        System.out.println("Venue Name: " + venue.venueName);
-        System.out.println("Mentor Name: " + mentor.mentorName);
-        System.out.println("Advertiser Name: " + advertiser.adName);
-    }
+		
+		if(this.batter!=null)
+		{
+			this.batter.getBatter();
+		}
+		else
+		{
+			System.out.println("Batter not found");
+		}
+		
+		if (this.franchise != null) 
+		{
+            this.franchise.getFranchise();
+        } else {
+            System.out.println("Franchise is null");
+        }
+		
+		if(this.venue!=null)
+		{
+			this.venue.getVenue();
+		}
+		else{
+			System.out.println("Venue not found");
+		}
+		
+		if(this.mentor!=null)
+		{
+			this.mentor.getMentor();
+		}
+		else{
+			System.out.println("Mentor not found");
+		}
+		
+		if(this.advertiser!=null)
+		{
+			this.advertiser.getAdvertiser();
+		}
+		else{
+			System.out.println("Advertiser not found");
+		}
+	}
+	
 }

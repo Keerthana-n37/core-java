@@ -8,8 +8,11 @@ class Folder{
 		this.folderLocation=folderLocation;
 		
 		System.out.println("Executing the folder constructor");
-		System.out.println("Folder name:"+folderName);
-		System.out.println("Folder location:"+folderLocation);
-		System.out.println("-----------------");
+	}
+	
+	void getFolder()
+	{
+		System.out.println("Folder name:"+this.folderName);
+		System.out.println("Folder location:"+this.folderLocation);
 	}
 }

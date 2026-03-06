@@ -6,8 +6,12 @@ class Sensor{
 		this.sensorType=sensorType;
 		this.active=active;
 		System.out.println("Sensor class is executing...");
-		System.out.println("Sensortype:"+sensorType);
-		System.out.println("Sensor is active:"+active);
-		System.out.println("--------------------");
+		
+	}
+	
+	void getSensor()
+	{
+		System.out.println("Sensortype:"+this.sensorType);
+		System.out.println("Sensor is active:"+this.active);
 	}
 }

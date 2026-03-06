@@ -8,9 +8,12 @@ class ScrollWheel{
 		this.type=type;
 		this.smooth=smooth;
 		
-		System.out.println("ScrollWheel class is executing..");
-		System.out.println("ScrollWheel type:"+type);
-		System.out.println("ScrollWheel is smooth:"+smooth);
-		System.out.println("--------------------");
+		System.out.println("ScrollWheel class is executing..");		
+	}
+	
+	void getScrollWheel()
+	{
+		System.out.println("ScrollWheel type:"+this.type);
+		System.out.println("ScrollWheel is smooth:"+this.smooth);
 	}
 }

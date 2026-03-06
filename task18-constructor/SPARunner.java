@@ -9,5 +9,6 @@ class SPARunner{
 		
 		SPA spa = new SPA(301, 1999.99, 'X', false, 90,
                 specialist, guest, therapy, cabin, productKit);
+		spa.getSPAInfo();		
 	}
 }

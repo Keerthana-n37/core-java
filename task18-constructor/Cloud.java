@@ -27,17 +27,52 @@ class Cloud{
         this.sky = sky;
         this.atmosphere = atmosphere;
         this.lightning = lightning;
-
-        System.out.println("Humidity Percent: " + humidityPercent);
-        System.out.println("Cloud Height: " + cloudHeightKm );
-        System.out.println("Is Stormy: " + isStormy);
-        System.out.println("Cloud Density: " + cloudDensity);
-        System.out.println("Temperature: " + temperatureCelsius);
-
-        System.out.println("Wind: " + wind.description);
-        System.out.println("Precipitation: " + precipitation.type);
-        System.out.println("Sky Color: " + sky.color);
-        System.out.println("Atmosphere: " + atmosphere.condition);
-        System.out.println("Lightning: " + lightning.status);
     }
+	
+	void getCloud()
+	{
+		System.out.println("Cloud details...");
+		System.out.println("Humidity Percent: " + this.humidityPercent);
+        System.out.println("Cloud Height: " + this.cloudHeightKm );
+        System.out.println("Is Stormy: " + this.isStormy);
+        System.out.println("Cloud Density: " + this.cloudDensity);
+        System.out.println("Temperature: " + this.temperatureCelsius);
+		
+		
+		if(this.wind!=null)
+		{
+			this.wind.getWindDetails();
+		}
+		else{
+			System.out.println("Wind is not there");
+		}
+		if(this.precipitation!=null)
+		{
+			this.precipitation.getPrecepitation();
+		}
+		else{
+			System.out.println("Precipitation is not there");
+		}
+		if(this.sky!=null)
+		{
+			this.sky.getSky();
+		}
+		else{
+			System.out.println("Sky is not there");
+		}
+		if(this.atmosphere!=null)
+		{
+			this.atmosphere.getAtmosphere();
+		}
+		else{
+			System.out.println("Atmosphere is not there");
+		}
+		if(this.lightning!=null)
+		{
+			this.lightning.getLightning();
+		}
+		else{
+			System.out.println("Lightning is not there");
+		}
+	}
 }
