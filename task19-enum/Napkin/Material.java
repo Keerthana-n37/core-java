@@ -1,0 +1,3 @@
+enum Material{
+	PAPER,CLOTH,BAMBOO,MICROFIBER
+}
