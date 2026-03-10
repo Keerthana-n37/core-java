@@ -1,0 +1,3 @@
+enum CashewType{
+  RAW, ROASTED,SALTED,FLAVORED
+}

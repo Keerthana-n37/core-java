@@ -1,0 +1,3 @@
+enum WalnutType{
+      BLACK,WHITE,HIMALAYAN,ENGLISH
+}
