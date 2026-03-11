@@ -1,4 +1,0 @@
-enum PumpkinType{
-	
-	JACK_O_LANTERN,SUGAR_PIE,CINDERELLA,KABOCHA
-}

@@ -1,3 +1,0 @@
-enum BeerFlavor{
-	BITTER,SWEET,SOUR,MALTY
-}

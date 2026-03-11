@@ -1,3 +1,0 @@
-enum MushroomType{
-	BUTTON,SHIITAKE,OYSTER,PORTOBELLO
-}

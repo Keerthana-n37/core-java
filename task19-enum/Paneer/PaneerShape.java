@@ -1,3 +1,0 @@
-enum PaneerShape{
-	RECTANGLE,CUBE,SLAB,SQUARE
-}
