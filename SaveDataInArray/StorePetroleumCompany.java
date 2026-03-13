@@ -8,12 +8,10 @@ class StorePetroleumCompany
 		this.companyNames=companyNames;
 	}
 	
-	
 	void getCompanyName(String companyName)
 	{
 		System.out.println("Executing the getCompanyName in StorePetroleumCompany");
 		System.out.println("Company name:"+companyName);
-		
 		
 		if(this.companyNames!=null)
 		{
@@ -35,6 +33,5 @@ class StorePetroleumCompany
 		else{
 			System.out.println("companyNames array is null");
 		}
-	}
-	
+	}	
 }
