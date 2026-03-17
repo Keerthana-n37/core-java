@@ -33,4 +33,37 @@ class StoreSteelNames
 			System.out.println("steelNames array is null");
 		}
 	}
+	
+	boolean searchSteelName(String steelName)
+	{
+		if(steelName != null)
+		{
+			System.out.println("Searching for the " + steelName + " in array");
+
+			if(this.steelNames != null)
+			{
+				System.out.println("Searching starts by comparing the names in array");
+
+				for(String name : this.steelNames)
+				{
+					System.out.println("Comparing " + steelName + " with " + name);
+
+					if(name == steelName) 
+					{
+						System.out.println("Name found in the array...");
+						return true;
+					}
+				}
+
+				System.out.println("Name not found in the array...");
+			}
+			else{
+				System.out.println("steelNames array is null");
+			}
+		}
+		else{
+			System.out.println("steelName is null, search cannot be done");
+		}
+		return false;
+	}
 }

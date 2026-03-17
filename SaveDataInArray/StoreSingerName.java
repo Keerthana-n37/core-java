@@ -33,4 +33,37 @@ class StoreSingerName
             System.out.println("singerNames array is null");
         }	
 	}
+	
+	boolean searchSingerName(String singerName)
+	{
+		if(singerName != null)
+		{
+			System.out.println("Searching for the " + singerName + " in array");
+
+			if(this.singerNames != null)
+			{
+				System.out.println("Searching starts by comparing the names in array");
+
+				for(String name : this.singerNames)
+				{
+					System.out.println("Comparing " + singerName + " with " + name);
+
+					if(name == singerName)
+					{
+						System.out.println("Name found in the array...");
+						return true;
+					}
+				}
+
+				System.out.println("Name not found in the array...");
+			}
+			else{
+				System.out.println("singerNames array is null");
+			}
+		}
+		else{
+			System.out.println("singerName is null, search cannot be done");
+		}
+		return false;
+	}
 }

@@ -48,7 +48,7 @@ class StoreScooterNames
 				{
 					System.out.println("Comparing " + scooterName + " with " + name);
 					
-					if(name == scooterName)  // Using == as requested
+					if(name == scooterName)
 					{
 						System.out.println("Name found in the array...");
 						return true;

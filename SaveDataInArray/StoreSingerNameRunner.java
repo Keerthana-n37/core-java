@@ -27,6 +27,21 @@ public class StoreSingerNameRunner
         storeSingerName.addSingerName("Jonita Gandhi");
         storeSingerName.addSingerName("Amit Trivedi");
         storeSingerName.addSingerName("Neeti Mohan");
+		System.out.println("---------------------");
+		
+		 System.out.println("Search Found");
+        boolean found = storeSingerName.searchSingerName("Armaan Malik");
+        System.out.println("Result: " + found);
+		System.out.println("---------------------");
+
+        System.out.println("Search Not Found");
+        boolean notFound = storeSingerName.searchSingerName("A.R. Rahman"); 
+        System.out.println("Result: " + notFound);
+		System.out.println("---------------------");
+
+        System.out.println("Search Null");
+        boolean nullCheck = storeSingerName.searchSingerName(null);
+        System.out.println("Result: " + nullCheck);
 
     }
 }

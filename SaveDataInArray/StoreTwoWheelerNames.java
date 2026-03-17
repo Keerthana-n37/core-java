@@ -36,4 +36,38 @@ class StoreTwoWheelerNames
 			System.out.println("modelNames array is null");
 		}	
     }
+	
+	boolean searchTwoWheelerName(String name)
+    {
+        if(name != null)
+        {
+            System.out.println("Searching for " + name + " in array");
+
+            if(this.modelNames != null)
+            {
+                System.out.println("Comparing names in the array:");
+
+                for(String tempName : this.modelNames)
+                {
+                    System.out.println("Comparing " + name + " with " + tempName);
+
+                    if(tempName == name) 
+                    {
+                        System.out.println("Name found in the array...");
+                        return true;
+                    }
+                }
+                System.out.println("Name not found in the array...");
+            }
+            else
+            {
+                System.out.println("modelNames array is null");
+            }
+        }
+        else
+        {
+            System.out.println("twoWheelerName is null, search cannot be done");
+        }
+        return false;
+    }
 }

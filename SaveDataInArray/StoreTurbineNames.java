@@ -33,4 +33,73 @@ class StoreTurbineNames
 			System.out.println("turbineNames array null");
 		}
 	}
+	
+	boolean searchTurbineName(String turbineName)
+	{
+		if(turbineName != null)
+		{
+			System.out.println("Searching for the " + turbineName + " in array");
+
+			if(this.turbineNames != null)
+			{
+				System.out.println("Searching starts by comparing the names in array");
+
+				for(String name : this.turbineNames)
+				{
+					System.out.println("Comparing " + turbineName + " with " + name);
+
+					if(name == turbineName)
+					{
+						System.out.println("Name found in the array...");
+						return true;
+					}
+				}
+
+				System.out.println("Name not found in the array...");
+			}
+			else{
+				System.out.println("turbineNames array is null");
+			}
+		}
+		else{
+			System.out.println("turbineName is null, search cannot be done");
+		}
+		return false;
+	}
+	
+	
+	boolean searchTwoWheelerName(String name)
+    {
+        if(name != null)
+        {
+            System.out.println("Searching for " + name + " in array");
+
+            if(this.twoWheelerNames != null)
+            {
+                System.out.println("Comparing names in the array:");
+
+                for(String tempName : this.twoWheelerNames)
+                {
+                    System.out.println("Comparing " + name + " with " + tempName);
+
+                    if(tempName == name) 
+                    {
+                        System.out.println("Name found in the array...");
+                        return true;
+                    }
+                }
+
+                System.out.println("Name not found in the array...");
+            }
+            else
+            {
+                System.out.println("twoWheelerNames array is null");
+            }
+        }
+        else
+        {
+            System.out.println("twoWheelerName is null, search cannot be done");
+        }
+        return false;
+    }
 }

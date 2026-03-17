@@ -58,6 +58,21 @@ public class StoreTwoWheelerRunner
         storeTwoWheeler.storeModelName("Yamaha Saluto RX");
         storeTwoWheeler.storeModelName("Suzuki Swish 125");
         storeTwoWheeler.storeModelName("KTM RC 125");
+		System.out.println("-----------------------");
+		
+		System.out.println("Search Found");
+        boolean found = storeTwoWheeler.searchTwoWheelerName("Bajaj Discover 125");
+        System.out.println("Result: " + found);
+		System.out.println("-----------------------");
+
+        System.out.println("Search Not Found");
+        boolean notFound = storeTwoWheeler.searchTwoWheelerName("Suzuki Swish"); // won't match ==
+        System.out.println("Result: " + notFound);
+		System.out.println("-----------------------");
+
+        System.out.println("Search Null");
+        boolean nullCheck = storeTwoWheeler.searchTwoWheelerName(null);
+        System.out.println("Result: " + nullCheck);
 
     }
 }
