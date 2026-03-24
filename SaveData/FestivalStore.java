@@ -17,7 +17,7 @@ class FestivalStore
             int lastIndex = this.festivalList.length - 1;
             if(startIndex <= lastIndex)
             {
-                this.festList[this.startIndex] = festival;
+                this.festivalList[this.startIndex] = festival;
                 System.out.println("Festival stored at index: " + this.startIndex);
                 this.startIndex++;
 
