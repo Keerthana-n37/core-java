@@ -28,10 +28,10 @@ class ShepherdDog extends GermanShepherd
     }
 
     void displayInfo() {
-        System.out.println("Shepherd Dog Info");
+        System.out.println("Shepherd Dog Information");
         System.out.println("Name: " + super.dogName);
-        System.out.println("Age: " + super.dogAgeMonths);
-        System.out.println("Weight : " + super.dogWeightKg);
+        System.out.println("Age: " + super.dogAge);
+        System.out.println("Weight : " + super.dogWeight);
         System.out.println("Fur Color: " + this.furColor);
         System.out.println("Trained: " + this.isTrained);
         System.out.println("----------------------------");
