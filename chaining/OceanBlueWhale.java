@@ -29,11 +29,11 @@ class OceanBlueWhale extends BlueWhale
 
     void display()
     {
-        System.out.println("Name: " + name);
-        System.out.println("Length: " + length);
-        System.out.println("Weight: " + weight);
-        System.out.println("Habitat: " + habitat);
-        System.out.println("Age: " + age);
+        System.out.println("Name: " + super.name);
+        System.out.println("Length: " + super.length);
+        System.out.println("Weight: " + super.weight);
+        System.out.println("Habitat: " + this.habitat);
+        System.out.println("Age: " + this.age);
         System.out.println("----------------------");
     }
 }
