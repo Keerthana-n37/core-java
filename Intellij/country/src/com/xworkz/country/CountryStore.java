@@ -102,4 +102,42 @@ public class CountryStore {
         System.out.println("City not found");
         return 0;
     }
+
+    Country findByCollectorName(String collectorName)
+    {
+        System.out.println("Executing findByCollectorName... ");
+
+        if(this.countries!=null && collectorName!=null)
+        {
+            for(Country country:this.countries)
+            {
+                if(country!=null && country.states!=null)
+                {
+                    for(State state:country.states){
+                        if(state!=null && state.cities!=null)
+                        {
+                            for(City city:state.cities){
+                                if(city!=null && city.districts!=null)
+                                {
+                                    for(District district:city.districts)
+                                    {
+                                        if(district!=null && district.collector!=null && district.collector.name!=null){
+                                            if(district.collector.name.equals(collectorName)){
+                                                System.out.println("Collector found in country:"+country.name);
+                                                return  country;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }else {
+            System.out.println("Invalid input");
+        }
+        System.out.println("Collector not found");
+        return null;
+    }
 }
