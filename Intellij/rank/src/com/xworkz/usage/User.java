@@ -4,7 +4,7 @@ import com.xworkz.inner.Remote;
 
 public class User {
 
-    Remote remote;
+    private Remote remote;
 
     public void setRemote(Remote remote)
     {
