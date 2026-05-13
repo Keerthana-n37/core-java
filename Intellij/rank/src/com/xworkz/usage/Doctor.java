@@ -4,7 +4,7 @@ import com.xworkz.inner.Hospital;
 
 public class Doctor {
 
-    Hospital hospital;
+    private Hospital hospital;
 
     public Doctor(Hospital hospital)
     {

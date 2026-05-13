@@ -2,6 +2,7 @@ package com.xworkz.runner;
 
 import com.xworkz.inner.Bluetooth;
 import com.xworkz.inner.RealmeBluetooth;
+import com.xworkz.outer.OnePlusBluetooth;
 import com.xworkz.usage.Device;
 
 public class BluetoothRunner {
@@ -15,5 +16,13 @@ public class BluetoothRunner {
         device.setBluetooth(bluetooth);
 
         device.useDevice();
+
+        device.disconnectDevice();
+
+        Bluetooth bluetooth1= new OnePlusBluetooth();
+
+        device.setBluetooth(bluetooth1);
+        device.useDevice();
+        device.disconnectDevice();
     }
 }

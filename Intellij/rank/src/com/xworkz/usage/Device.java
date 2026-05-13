@@ -4,7 +4,7 @@ import com.xworkz.inner.Bluetooth;
 
 public class Device {
 
-    Bluetooth bluetooth;
+    private Bluetooth bluetooth;
 
     public void setBluetooth(Bluetooth bluetooth)
     {
@@ -23,12 +23,18 @@ public class Device {
         else {
             System.out.println("Bluetooth cannot be connected");
         }
+    }
+
+    public void disconnectDevice()
+    {
+        System.out.println("Running disconnectDevice in device");
 
         if(this.bluetooth!=null)
         {
             this.bluetooth.disConnect();
-            System.out.println("Bluetooth is disconnected");
+            System.out.println("Bluetooth is disconnected from the device");
         }
+
         else {
             System.out.println("Bluetooth cannot be disconnected");
         }
