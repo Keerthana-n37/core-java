@@ -4,7 +4,7 @@ import com.xworkz.inner.SuperMarket;
 
 public class Producer {
 
-    SuperMarket superMarket;
+    private SuperMarket superMarket;
 
     public Producer(SuperMarket superMarket)
     {
